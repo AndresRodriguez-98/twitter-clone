@@ -2,6 +2,7 @@
 import { type Session, createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { GitHubIcon } from './icons'
 import { useRouter } from 'next/navigation'
+import { Button } from '@nextui-org/button'
 
 export function AuthButton ({ session }: { session: Session | null }) {
   const supabase = createClientComponentClient()
@@ -31,7 +32,7 @@ export function AuthButton ({ session }: { session: Session | null }) {
               Iniciar sesión con Github
             </button>
             )
-          : <button onClick={handleSingOut}>SingOut</button>
+          : <Button onClick={handleSingOut}>Cerrar Sesión</Button>
       }
     </header>
   )
