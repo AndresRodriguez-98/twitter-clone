@@ -6,13 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gen:types": "npx supabase gen types typescript --project-id tpvvubjlfsrvhbxjlyev > ./src/app/types/database.ts"
   },
   "dependencies": {
     "@nextui-org/button": "^2.0.21",
     "@nextui-org/react": "^2.1.13",
     "@supabase/auth-helpers-nextjs": "^0.8.1",
     "@supabase/supabase-js": "^2.38.0",
+    "@tabler/icons-react": "^2.39.0",
     "framer-motion": "^10.16.4",
     "next": "13.5.4",
     "react": "^18",
