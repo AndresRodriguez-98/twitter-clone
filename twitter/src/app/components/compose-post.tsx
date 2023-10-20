@@ -22,7 +22,7 @@ export function ComposePost ({
       <textarea
         name='content'
         rows={4}
-        className='w-full text-xl bg-black placeholder-gray-500 p-2'
+        className='w-full text-xl ml-2 bg-black placeholder-gray-500 p-2'
         placeholder='¡¿Qué está pasando!?'
       ></textarea>
         <ComposePostButton />

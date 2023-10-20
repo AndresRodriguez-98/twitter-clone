@@ -23,13 +23,13 @@ export default function PostCard ({
                         <Avatar radius="full" size="md" src={avatarUrl} />
                     </Link>
                     <div className="flex flex-col gap-1 items-start justify-center">
-                        <h4 className="text-small font-semibold leading-none text-default-600">{userFullName}</h4>
+                        <h4 className="text-lg font-semibold leading-none text-default-600">{userFullName}</h4>
                         <h5 className="text-small tracking-tight text-default-400">{userName}</h5>
                     </div>
                 </div>
 
             </CardHeader>
-            <CardBody className="px-3 py-0 text-xs text-white bg-transparent">
+            <CardBody className="px-3 py-0 text-base text-white bg-transparent">
                 <p>
                     {content}
                 </p>
