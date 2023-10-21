@@ -8,7 +8,7 @@ import { ComposePost } from './components/compose-post'
 import { IconBell, IconBookmark, IconBrandTwitterFilled, IconFeather, IconHome, IconMail, IconSearch, IconUserCircle } from '@tabler/icons-react'
 import { SearchBar } from './components/search-bar'
 
-export default async function Home() {
+export default async function Home () {
   // creando los tipos de la database y trayendo solo eso nos ahorramos de traer solo lo que necesitamos y que no se ejecute codigo en vano.
   const supabase = createServerComponentClient<Database>({ cookies })
   const { data: session } = await supabase.auth.getSession() // renombramos la data como posts y de los posts agarramos todos con el *
